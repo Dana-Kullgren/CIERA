@@ -1,5 +1,6 @@
 # Miscellaneous files
 newfile.txt
+*.dat
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
