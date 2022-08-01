@@ -1,7 +1,4 @@
 # CIERA
 Summer 2022 REU
 
-Right now, this is a test repo from a workshop.
-Now I am adding to this file directly from GitHub.
-Fixing the error from pulling a change from a file I had made a different change to locally.
-
+This is a place to save scripts from my summer research project at the CIERA REU.
