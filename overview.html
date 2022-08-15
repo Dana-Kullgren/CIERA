@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Comparing simulation data with LIGO data to constrain the initial mass function</title>
+        <link href="index.css" rel="stylesheet" type="text/css">
+<!--         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
+        <script type="text/javascript" id="MathJax-script" async
+                 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+    </head>
+    
+    <body>
+        <div style="padding:2px"></div>
+        <h1>Dana Kullgren</h1>
+        <h3>My Experience With The CIERA REU</h3>
+        
+        <div class="tabs">
+            <table>
+                <tr>
+                    <th><a href="index.html">About Me</a></th>
+                    <th><b><a href="overview.html">Project Introduction</a></b></th>
+                    <th><a href="methods.html">Methods</a></th>
+                    <th><a href="results.html">Results and Next Steps</a></th>
+                </tr>
+            </table>
+        </div>
+        <h2>Introduction</h2>
+        
+        <p>
+The stellar initial mass function (IMF) is the function that describes the mass distribution of stars (i.e. the number of stars born at each stellar mass) (<a href="https://ui.adsabs.harvard.edu/link_gateway/2017MNRAS.464.1738D/doi:10.1093/mnras/stw2465" target="_blank">Dib et al. 2017</a>).
+<br/><br/>
+The IMF is written in the following form, where <i>m</i> is the mass and &alpha;<sub>3</sub> determines the behavior of the function for the high-mass range (<a href="https://ui.adsabs.harvard.edu/link_gateway/2021ApJ...907L..25W/doi:10.3847/2041-8213/abd79c" target="_blank">Weatherford et al. 2021</a>). A low value of &alpha;<sub>3</sub> means that more high-mass stars will form (a “top-heavy” IMF) and a high value of &alpha;<sub>3</sub> means that fewer high-mass stars will form (a "top light" IMF) (<a href="https://ui.adsabs.harvard.edu/link_gateway/2021ApJ...907L..25W/doi:10.3847/2041-8213/abd79c" target="_blank">Weatherford et al. 2021</a>).
+<br/>
+\begin{equation}
+\xi (m) =
+    \begin{cases}
+        m^{-1.3}     & 0.08\, \leq\, m/M_\odot\, \leq\, 0.5\\
+        m^{-2.3}     & 0.5\, \leq\, m/M_\odot\, \leq\, 1.0\\
+        m^{-\alpha_3} & 1.0\, \leq\, m/M_\odot\, \leq\, 150.0
+    \end{cases}
+\end{equation}
+
+The IMF remains poorly constrained on the high-mass end as it varies over time and space (<a href="https://ui.adsabs.harvard.edu/link_gateway/2021ApJ...907L..25W/doi:10.3847/2041-8213/abd79c" target="_blank">Weatherford et al. 2021</a>). Therefore, the value of &alpha;<sub>3</sub> is not well constrained.
+<br/><br/>            
+The value &alpha;<sub>3</sub> has a clear impact on the lifetime of stellar clusters (<a href="https://ui.adsabs.harvard.edu/link_gateway/2021ApJ...907L..25W/doi:10.3847/2041-8213/abd79c" target="_blank">Weatherford et al. 2021</a>). For example, a cluster with a top-heavy IMF will dissolve faster than a cluster with a flat IMF (<a href="https://ui.adsabs.harvard.edu/link_gateway/2017ApJ...834...68C/doi:10.3847/1538-4357/834/1/68" target="_blank">Chatterjee et al. 2017</a>). Dissolution is the process where stars escape a cluster over time. The top-heavy IMF cluster will produce stars and eventually black holes (BHs) of greater number and higher mass, which will cause the cluster to expand and potentially dissolve as BHs fall toward the center of the cluster (<a href="https://ui.adsabs.harvard.edu/link_gateway/2021ApJ...907L..25W/doi:10.3847/2041-8213/abd79c" target="_blank">Weatherford et al. 2021</a>). This process is known as "black hole burning" (<a href="https://ui.adsabs.harvard.edu/link_gateway/2020IAUS..351..357K/doi:10.1017/S1743921319007269" target="_blank">Kremer et al. 2020a</a>). Therefore, constraining the value of α3 will improve our understanding of star formation and cluster evolution.
+<br/><br/>
+One way that &alpha;<sub>3</sub> can be constrained is by comparing simulation data to observational data. In this project, I compared N-body simulations of stellar clusters that had different values of &alpha;<sub>3</sub> to observational data in order to constrain the value of &alpha;<sub>3</sub>.
+                    </p>
+        <br/>
+        <div class="acknowledgements">
+            <div class='ack_title'><b>Acknowledgements</b></div>
+                This material is based upon work supported by the National Science Foundation under Grant No. AST-2149425,
+                a Research Experiences for Undergraduates (REU) grant awarded to CIERA at Northwestern University. Any opinions, findings, 
+                and conclusions or recommendations expressed in this material are those of the author(s) and do not
+                necessarily reflect the views of the National Science Foundation.
+
+                This research was supported in part through the computational resources and staff contributions provided for the
+                Quest high performance computing facility at Northwestern University which is jointly supported by the Office of the
+                Provost, the Office for Research, and Northwestern University Information Technology.
+
+                This research was also supported by Aaron Geller and Tjitske Starkenburg who oversaw the CIERA REU.
+        </div>
+    </body>
+</html>

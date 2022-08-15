@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Comparing simulation data with LIGO data to constrain the initial mass function</title>
+        <link href="index.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    <body>
+        <div style="padding:2px"></div>
+        <h1>Dana Kullgren</h1>
+        <h3>My Experience With The CIERA REU</h3>
+        
+        <div class="tabs">
+            <table>
+                <tr>
+                    <th><a href="index.html">About Me</a></th>
+                    <th><a href="overview.html">Project Introduction</a></th>
+                    <th><a href="methods.html">Methods</a></th>
+                    <th><b><a href="results.html">Results and Next Steps</a></b></th>
+                </tr>
+            </table>
+        </div>
+        
+        <img src="VolRates.png" alt="Plot of volumetric BBH merger rates over redshift" class=rates_photo>
+        
+<!--         <div class="rates_comment"> -->
+        <p>
+            <b>Figure 1</b>: Volumetric rate of BBH mergers over redshift. Central 50% (dark gray) and 90% (light gray) credible bounds on 
+            the BBH merger rate. LIGO data from <a href="https://ui.adsabs.harvard.edu/link_gateway/2021arXiv211103634T/arxiv:2111.03634">LIGO/Virgo/KAGRA et al. (2021)</a>.
+        </p>
+<!--         </div> -->
+        <br/>
+        
+        <img src="ContourPlot_bigfont-1.png" alt="Plot of primary mass vs secondary mass for each of the five values of alpha-3">
+        
+        <br/>
+        <p>
+            <b>Figure 2</b>: Component masses of BBH mergers extracted from cluster models  (black contours) and from LIGO (red circles 
+            with error bars). Each plot shows simulation data for a different value of &alpha;<sub>3</sub>.
+        </p>  
+        
+        <h2>Results</h2>
+        
+        <p>
+            Figure 1 relates merger rates from simulations to observational data. It shows that simulation rates best match observational 
+            rates for &alpha;<sub>3</sub>=1.6, &alpha;<sub>3</sub>=2.0, and &alpha;<sub>3</sub>=2.3.
+            <br/><br/>
+            Figure 2 has five different &alpha;<sub>3</sub> values. In a BBH merger, the primary mass is the mass of the larger BH. In this 
+            plot, the simulation data for &alpha;<sub>3</sub>=2.0 and &alpha;<sub>3</sub>=2.3 match most closely with the observational 
+            data.
+            <br/><br/>
+            <b>Overall, the simulation data for &alpha;<sub>3</sub>=1.6, &alpha;<sub>3</sub>=2.0, and &alpha;<sub>3</sub>=2.3 match most closely with 
+                the observational data.</b>
+        </p>
+        <h2>Discussion and Next Steps</h2>
+
+        <p>
+            This process has produced constraints for &alpha;<sub>3</sub>, but there are still steps to be taken before a definitive result 
+            can be given.
+            <br/><br/>            
+            I will improve the accuracy of the constraints on &alpha;<sub>3</sub> by incorporating simulations of stellar environments 
+            outside of clusters 
+            into this analysis (simulations need to include BBHs from the field). The current simulations only look at BBHs formed in stellar 
+            clusters while LIGO data is not limited to cluster BBHs.
+            <br/><br/>            
+            However, cluster simulations can still be used to put constraints on &alpha;<sub>3</sub> 
+            if assumptions are made about the fraction of mergers that clusters contribute to the overall merger rate. For example, if I assume 
+            that clusters contribute X% to the overall merger rate, I can calculate the overall merger rate compared to LIGO data. This 
+            would allow me to put constraints on the number of top-heavy clusters in the Universe.
+            <br/><br/>            
+            As a separate note, this data indicates that clusters with top-light IMFs are unlikely to be large contributors to the overall merger rate.
+            <br/><br/>            
+            Another next step 
+            for this project will be to produce an updated grid of simulation models and perform this analysis based on that grid. The 
+            current models being used do not allow for three-body binary formation (<a href="https://ui.adsabs.harvard.edu/link_gateway/1970ApJ...160..135M/doi:10.1086/150412" target="_blank">Mansbach 1970</a>). Furthermore, 
+            the binary period 
+            distributions and radii of giant stars need to be updated to remain consistent with recent data.
+            
+        <h2>Conclusion</h2>
+        <p>
+            Preliminary results show that &alpha;<sub>3</sub>=<b>1.6</b>, &alpha;<sub>3</sub>=<b>2.0</b>, and &alpha;<sub>3</sub>=<b>2.3</b> are the most 
+            accurate &alpha;<sub>3</sub> values. This indicates that &alpha;<sub>3</sub> is slightly less than or equal to its canonical 
+            value, which either means that the current understanding of the IMF is accurate (&alpha;<sub>3</sub>=2.3) or that there are a 
+            greater number of massive stars formed in the universe than current theory suggests (&alpha;<sub>3</sub>=1.6, 2.0). With more work on 
+            this project, I will put more accurate constraints on the value of &alpha;<sub>3</sub> in the IMF.
+        </p>
+        <br/>
+        <div class="acknowledgements">
+            <div class='ack_title'><b>Acknowledgements</b></div>
+                This material is based upon work supported by the National Science Foundation under Grant No. AST-2149425,
+                a Research Experiences for Undergraduates (REU) grant awarded to CIERA at Northwestern University. Any opinions, findings, 
+                and conclusions or recommendations expressed in this material are those of the author(s) and do not
+                necessarily reflect the views of the National Science Foundation.
+
+                This research was supported in part through the computational resources and staff contributions provided for the
+                Quest high performance computing facility at Northwestern University which is jointly supported by the Office of the
+                Provost, the Office for Research, and Northwestern University Information Technology.
+
+                This research was also supported by Aaron Geller and Tjitske Starkenburg who oversaw the CIERA REU.
+        </div>
+    </body>
+</html>

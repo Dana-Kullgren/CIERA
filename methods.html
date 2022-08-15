@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Comparing simulation data with LIGO data to constrain the initial mass function</title>
+        <link href="index.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" id="MathJax-script" async
+                 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+    </head>
+    
+    <body>
+        <div style="padding:2px"></div>
+        <h1>Dana Kullgren</h1>
+        <h3>My Experience With The CIERA REU</h3>
+        
+        <div class="tabs">
+            <table>
+                <tr>
+                    <th><a href="index.html">About Me</a></th>
+                    <th><a href="overview.html">Project Introduction</a></th>
+                    <th><b><a href="methods.html">Methods</a></b></th>
+                    <th><a href="results.html">Results and Next Steps</a></th>
+                </tr>
+            </table>
+        </div>
+        
+            <h2>Methods</h2>
+            <p>
+
+                I looked at a total of 33 star clusters which were simulated using the Cluster Monte Carlo (CMC) code, a Hénon-type Monte Carlo code that computes the long-term evolution of stellar clusters (<a href="https://doi.org/10.3847/1538-4365/ab7919" target="_blank">Kremer et al. 2020b</a>). These 
+                simulations all had the following initial conditions:
+            </p>
+                <ul>
+                    <li>Galactocentric distance = 8 [kpc]</li>
+                    <li>Total number of objects (N) = 8 × 10<sup>5</sup></li>
+                    <li>Initial binary fraction = 5 [%]</li>
+                    <li>High-mass binary fraction = 5 [%]</li>
+                </ul>
+            <p>
+                By contrast, these initial conditions were varied among the models:
+            </p>    
+                <ul>
+                    <li>Virial radius = 0.5, 1.0, 2.0, 4.0 [pc]</li>
+                    <li>Metallicity = 0.01, 0.1 [Z<sub>☉</sub>]</li>
+                    <li>&alpha;<sub>3</sub> = 1.6, 2.0, 2.3, 2.6, and 3.0</li>
+                </ul>
+            <p>
+                The canonical value of &alpha;<sub>3</sub> is 2.3 so the values of &alpha;<sub>3</sub> used for these models were chosen around that value (<a href=https://ui.adsabs.harvard.edu/link_gateway/2001MNRAS.322..231K/doi:10.1046/j.1365-8711.2001.04022.x target="_blank">Kroupa 2001</a>).
+                <br/><br/>
+                From these simulations, I determined the rate of BBH mergers and the masses of BHs that collide in BBH mergers
+                for each &alpha;<sub>3</sub> value. These variables from the simulation data were compared to data from the Laser 
+                Interferometer
+                Gravitational-Wave Observatory (LIGO), which detects BBH mergers by observing gravitational waves. The LIGO data used in this analysis includes the 01, 02, and 03 observations (<a href="https://www.gw-openscience.org/eventapi/html/GWTC/" target="_blank">LIGO/Virgo/KAGRA 
+                2020</a>).
+        <br/><br/>
+            As in <a href="https://ui.adsabs.harvard.edu/link_gateway/2021ApJ...913L..29F/doi:10.3847/2041-8213/ac00a7" target="_blank">Fragione and Banerjee 2021</a>, I applied a detectability weight to each simulated BBH merger based on that
+                merger’s signal-to-noise ratio.
+        <br/><br/>
+            By comparing the rates and component masses obtained from different &alpha;<sub>3</sub> values to rates and component masses in
+            LIGO data, I aim to better constrain the IMF in stellar clusters.
+        </p>
+        <br/>
+        <div class="acknowledgements">
+            <div class='ack_title'><b>Acknowledgements</b></div>
+                This material is based upon work supported by the National Science Foundation under Grant No. AST-2149425,
+                a Research Experiences for Undergraduates (REU) grant awarded to CIERA at Northwestern University. Any opinions, findings, 
+                and conclusions or recommendations expressed in this material are those of the author(s) and do not
+                necessarily reflect the views of the National Science Foundation.
+
+                This research was supported in part through the computational resources and staff contributions provided for the
+                Quest high performance computing facility at Northwestern University which is jointly supported by the Office of the
+                Provost, the Office for Research, and Northwestern University Information Technology.
+
+                This research was also supported by Aaron Geller and Tjitske Starkenburg who oversaw the CIERA REU.
+        </div>
+    </body>
+</html>

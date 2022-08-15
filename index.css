@@ -1,0 +1,136 @@
+body {
+    background-image: url(https://t3.ftcdn.net/jpg/02/64/27/90/360_F_264279006_WDXxV3OHjAOoHqH7iiLDrg23p0947g7U.jpg);
+    background-color: #000000;
+    margin:2px;
+    font-family: Trebuchet;
+    text-align: left;
+}
+a {
+  color: #7e42f5;
+}
+p {
+    background-color: #ffffff;
+    text-align: justify;
+    font-size: 16px;
+    margin: 0px 150px 0px;
+    padding: 10px;
+}
+h1 {
+    font-family: Avantgarde;
+    text-align: center;
+/*     background-color: #7e42f5; */
+/*     margin: 50px 150px 0px; */
+    margin:0px 400px 0px;
+/*     background-color: #000000; */
+    padding:10px;
+/*     margin-left: 50px;
+    margin-right: 50px;
+    margin:0; */
+    font-size: 48px;
+    color: #ffffff;
+}
+h2 {
+    font-family: Avantgarde;
+    text-align: center;
+    font-size: 26px;
+    margin:5px 400px 10px;
+    padding:0;
+    color: #ded6ff;
+/*     background-color: #000000; */
+    font-style: italic;
+}
+h3 {
+    font-family: Avantgarde;
+    text-align: center;
+    background-color: #7e42f5;
+    font-size: 20px;
+    margin:0px 150px 20px;
+    color: #ded6ff;
+    padding:10px;
+}
+
+table, th, td {
+  text-align: center;
+  table-layout: fixed;
+  border: 1px solid;
+  background-color: #ded6ff;
+  color: #ffffff;
+  height: 50px;
+  width: 77%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+    background-color: #ffffff;
+    text-align: justify;
+    font-size: 16px;
+    margin: 0px 150px 0px;
+    padding-right: 20px;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width:76%;
+}
+
+.dana_photo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width:20%;
+    border-radius: 50%;
+    float: right;
+    padding:10px;
+}
+
+.rates_photo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width:30%;
+    padding:10px;
+}
+
+.rates_comment{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    float: right;
+    background-color: #ffffff;
+    font-size: 16px;
+/*     margin: 0px 10px 0px 600px; */
+    padding: 10px;
+}
+
+.about_me{
+    float: left;
+}
+
+.acknowledgements{
+    margin: 0px 150px 20px;
+    padding: 10px;
+    color: #ded6ff;
+    background-color: #7e42f5;
+}
+
+.ack_title{
+    margin: 0px 150px 0px;
+    padding: 5px;
+    color: #ffffff;
+    background-color: #7e42f5;    
+    font-family: Avantgarde;
+    text-align: center;
+    background-color: #7e42f5;
+    font-size: 20px;
+}
+
+#image{
+    margin:10px;
+}
